@@ -7,17 +7,16 @@
     padding: 5px;
     border-radius: 30px;
     font-weight: bold;
-
 }
 
 .activ{
   background: hsl(60, 23%, 95%);
   border-radius: 10px;
 }
+
 li{
   padding: 3px;
 }
-
 
 img:hover {
   cursor: pointer;
