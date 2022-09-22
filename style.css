@@ -1,0 +1,25 @@
+
+.imag {
+  width: 50%;
+  height: 400px;
+   background-position: center;
+   background-repeat: no-repeat;  
+    padding: 5px;
+    border-radius: 30px;
+    font-weight: bold;
+
+}
+
+.activ{
+  background: hsl(60, 23%, 95%);
+  border-radius: 10px;
+}
+li{
+  padding: 3px;
+}
+
+
+img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
