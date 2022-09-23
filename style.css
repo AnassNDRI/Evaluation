@@ -22,3 +22,19 @@ img:hover {
   cursor: pointer;
   opacity: 0.5;
 }
+
+
+.divInfo {
+  padding: 100px ;
+}
+
+
+ .jumbo {
+  font-size: 24px;
+  font-family: Cambria;
+  font-style: italic;
+ }
+
+.divInfo {
+  padding: 100px ;
+}
