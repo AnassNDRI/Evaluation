@@ -11,6 +11,34 @@
 </head>
 <body>
     
+<!--========================================= start modal ========================================-->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Me contacter</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                <label for="email">Expéditeur</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="votremail@com">
+                <label for="subject">Sujet</label>
+                <input type="text" class="form-control" id="subject" name="subject">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-primary">Envoyer le message</button>
+          </div>
+      </div>
+  </div>
+</div>
+<!--========================================= end modal ========================================-->
+
+
 <!--========================================= start nav bar ========================================-->
 <header>
   <!-- NAVBAR-->
