@@ -1,3 +1,4 @@
+
 .image {
   width: 100%;
   height: 393px;
@@ -81,15 +82,10 @@ img:hover {
 
 .paragrah{
   text-align: center;
-  font-size: 24px;
   font-family: 'Times New Roman', Times, serif;
   background-color: rgb(232, 243, 243);
   padding: 80px;
   border-radius: 30px;
-}
-
-.divInfo {
-  padding: 100px ;
 }
 
 .ulStyle {
