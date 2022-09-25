@@ -5,20 +5,417 @@
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" href="fontawesome.min.css">
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
 
+<!--========================================= start modal ========================================-->
+ <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Me contacter</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><b>X</b></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                  <label for="email">Expéditeur</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="votremail@com">
+                  <label for="subject">Sujet</label>
+                  <input type="text" class="form-control" id="subject" name="subject">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-primary">Envoyer le message</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-  
+<!--========================================= end modal ========================================-->
+
+<!--========================================= start nav bar ========================================-->
+  <header>
+  <!-- NAVBAR-->
+<nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a href="#" class="navbar-brand">
+      <!-- Logo Image -->
+      <img src="ressources/Capture3.PNG" width="220" alt="" class="d-inline-block align-middle mr-1">
+      <!-- Logo Text -->
+      <span class="text-uppercase font-weight-bold">Ahua Village</span>
+    </a>
+
+    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active "><button type="button" class="btn btn-secondary">
+          <a href="#" class="nav-link ulStyle"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+          </svg><span class="sr-only"></span></a></button>
+        </li>
+        <li class="nav-item active"><button type="button" class="btn btn-secondary">
+          <a href="#" class="nav-link ulStyle">Annonces<span class="sr-only"></span></a></button>
+        </li>
+        <li class="nav-item active"><button type="button" class="btn btn-secondary">
+          <a href="#" class="nav-link ulStyle">Visiter <span class="sr-only"></span></a></button>
+        </li>
+        <li class="nav-item active"><button type="button" class="btn btn-secondary">
+          <a href="#" class="nav-link ulStyle">Vivre <span class="sr-only"></span></a></button>
+        </li>
+        <li class="nav-item active"><button type="button" class="btn btn-secondary">
+          <a href="#" class="nav-link ulStyle">Reservations<span class="sr-only"></span></a></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<!--========================================= end nav bar ========================================-->
+
+<!--=========================================  div jumbotron ========================================-->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4" style="text-align:center ;"><i> Bienvenu sur le Site de l'association des habitants d'Ahua.</i></h1>
+          <p class="lead jumbo" >Ahua merveilleux village littoral <br>
+            Situé au bord du fleuve bandama à 12 kilomètres 
+            de la sous-prefecture de Tiassalé et à 120 kilomètres de la capitale Abidjanaise. 
+             bercé par la fraîcheur des marées. <br>
+             Sa riches se culturelle, Ses cocotiers,  le calme et 
+             la splendeur de la nature offrent un cadre reposant qui font d’Ahua l’une des zones
+              ivoiriennes les plus prisées.</p>
+        </div>    
+      </div>
+       <!--=========================================  end jumbotron ========================================-->
+</div>
+
+
+ <!--=========================================  div medias ========================================-->
+<main class="container">
+  <section>
+    <div class="row row-cols-1 row-cols-sm-2">
+      <!--  card viilage -->
+      <article class="col p-2">
+        <div class="card CardRad">
+          <img
+            src="ressources/Ahua.jpg"
+            class="card-img-top rounded-3 disign"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Notre village</h5>
+            <p class="card-text">
+              Ahua, village fluviatile de 4 000 habitants situé à 107 km au nord d'Abidjan.
+              Le village est une grande région agricole. Un week-end dans cette zone est 
+              donc l’occasion d’aller à la rencontre des cultivateurs et de découvrir leurs plantations.
+              Vous optez pour un week-end au vert pour prendre votre temps et profiter 
+              du charme et de la tranquillité de la « campagne »
+              Nous vous recommandons de réserver une activités !
+            </p>
+          </div>
+        </div>
+      </article>
+      <!--  card balage -->
+      <article class="col p-2">
+        <div class="card CardRad">
+          <img
+            src="ressources/image.jpg"
+            class="card-img-top rounded-3 disign"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Balade en pirogue</h5>
+            <p class="card-text">
+              la balade sur le fleuve Bandama est une des plus belles activités
+              le fleuve est totalement immaculé, calme, serein. Seuls le chant des oiseaux,
+              les grognements des hippopotames et les rires des jeunes villageois qui se baignent
+              viennent troubler le silence ambiant. Les piroguiers, à la seule force de leurs bras, 
+              rament avec dextérité et jouent avec les courants pour nous mener dans les zones
+              où se regroupent souvent les hippopotames.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<!--=========================================  div medias ========================================-->
+
+
+<!--=========================================  div info========================================-->
+<div class="divInfo ">
+  <div class="text-center paragrah">
+    <p>
+       À Ahua, c'est:
+    </p>
+      <p>
+        Vivre, Cultiver, Construire. 
+      </p>
+      <p>
+        Notre association née en 2002. Nous organisons des activités <br> 
+        au sein de notre village et des 
+        excursions.
+      </p>
+      <p>
+        Ce qui nous lie, ce qui nous rassemble : c'est la lutte contre la précarité, <br>
+        le vivre ensemble,le partage, le respect de l'humain dans sa globalité, <br>
+        lutte contre la deforestation et la protection de la nature.
+      </p>
+      <p>
+        Oui, nous pouvons créer ensemble les conditions d'une coopération utile à toutes et tous. <br>
+        Nous voulons élaborer un modèle pour lutter contre l'isolement, favoriser <br>
+          le bien être de chacun, au sein d'un collectif bienveillant, <br>
+          soutenant et porteur de sens.
+      </p>
+      <p> 
+        L'accompagnement social, l'activité économique avec un parti pris écologiste, <br>
+        l'accès et la participation à la vie culturelle sont les outils que nous mettons <br>
+        en œuvre pour faire vivre notre projet.
+      </p> 
+  </div>
+</div>
+<!--========================================= end info========================================-->
+
+<!--========================================= start div youtube========================================-->
+<div class="container">
+  <div class="row">
+      <div class="col">
+        <div class="card">
+          <iframe width="auto" height="600" src="https://www.youtube.com/embed/fnJrLE9jlek" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+           allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title">A decouvrir !</h5>
+            <p class="card-text">
+              La principale activité à Ahua (Tiassalé) consiste à aller à la rencontre des hippopotames à bord 
+              d’une petite pirogue traditionnelle. Mais avant de vous en dire plus,
+              quelques mots sur nos amis les hippos…
+              Les hippopotames communs, ou amphibies, vivent en grands groupes dominés par un mâle 
+              polygame et irascible. Ils passent la journée dans l’eau pour se protéger du
+               soleil et se nourrissent d’herbe et de graminées à proximité des berges.
+                La nuit tombée, ils sortent de l’eau pour rejoindre des pâturages,
+                 parcourant pour cela jusqu’à 10 km. Ils consomment 40 kg de matières 
+                 végétales en moyenne chaque nuit. Et bien qu’ils soient herbivores, 
+                 les hippopotames comptent parmi les animaux les plus dangereux d’Afrique
+                  qui protègent férocement leur territoire et attaquent les humains en cas de
+             danger. (source : https://www.larousse.fr/encyclopedie/vie-sauvage/hippopotame/178174)
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<!--========================================= end div youtube========================================-->
+
+ 
+  <!--========================================= start tables div========================================-->
+<div class="container-fluid">
+  <!-- table 1 -->
+  <div class="row" style="padding: 20px;" >
+    <div class="py-3 col-md-4 col-lg-3 col-xl-2">
+      <div class="list-group">
+        <a href="#" class="list-group-item active"><b>Activités</b></a>
+        <a href="#" class="list-group-item th2">Course à Pirogue
+          <div class="InfoActivity"> Tous les Dimanches</div>
+        </a>
+        <a href="#" class="list-group-item th2">Visite decouverte
+          <div class="InfoActivity"> Tous les Samedis</div>
+        </a>
+        <a href="#" class="list-group-item th2">Cuisine
+          <div class="InfoActivity"> Tous les vendredis</div>
+        </a>
+        <a href="#" class="list-group-item th2">Sport
+          <div class="InfoActivity"> Tous les Mercredis</div>
+        </a>
+      </div>
+    </div>
+    <!-- table 2 -->
+    <div class="py-3 col" >
+      <div class="table-responsive">
+        <table class="table table-striped text-center">
+          <thead>
+            <tr class="bg-primary text-white"  >
+              <th class="th1" scope="col "></th>
+              <th class="th1" scope="col" >Distance</th>
+              <th class="th1" scope="col">Activités</th>
+              <th class="th1" scope="col">Moyen de transport</th>
+              <th class="th1" scope="col">Nombres</th>
+              <th class="th1" scope="col">Dortoire</th>
+              <th class="th1" scope="col">Reservations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Acoudjè</th>
+              <td>2 kilomètres</td>
+              <td>Visites des Champs</td>
+              <td>A pieds / pirogue</td>
+              <td>20 Personnes</td>
+              <td>Non</td>
+              <td><button class="button btn btn-success">Reserver 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
+                fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+              </svg></button></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Assinzé</th>
+              <td>2 kilomètres</td>
+              <td>Visites des Champs</td>
+              <td>A pieds</td>
+              <td>20 Personnes</td>
+              <td>Non</td>
+              <td><button class="button btn btn-success">Reserver<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
+                fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+              </svg>
+            </button></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Broubrou</th>
+              <td>8 kilomètres</td>
+              <td>Visites decouverte</td>
+              <td>pirogue</td>
+              <td>20 Personnes</td>
+              <td>Oui</td>
+              <td><button class="button btn btn-success">Reserver <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
+                fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+              </svg></button></td>
+            </tr>
+
+            <tr>
+              <th scope="row">DenisKro</th>
+              <td>4 kilomètres</td>
+              <td>Parc naturel</td>
+              <td>A pieds</td>
+              <td>20 Personnes</td>
+              <td>Oui</td>
+              <td><button class="button btn btn-success">Reserver <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
+                fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+              </svg></button></td>
+
+            </tr>
+            <tr>
+              <th scope="row">Elosso</th>
+              <td>5 kilomètres</td>
+              <td>Visites de l'île</td>
+              <td>A pieds / pirogue</td>
+              <td>10 Personnes</td>
+              <td>Non</td>
+              <td><button class="button btn btn-success">Reserver <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
+                fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+              </svg></button></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--========================================= end tables div========================================-->
+
+<!--========================================= start div progress bar ========================================-->
+<div> 
+      <div class="row justify-content-center" style="padding: 50px ;">
+        <h2 class="col-10 justify-content-start">Campagne de financement de notre système d'electrification rurale</h2>
+        <div class="alert alert-success col-10 ">
+            <p>Vous avez été nombreux à participer à notre dernière campagne de financement ! Merci à tous !</p>
+            <!-- Définition du composant -->
+            <div class="progress">
+                <!-- Barre de progrès, ici à 90% remplie-->
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" 
+                style="width: 70%" aria-valuenow="10000" aria-valuemin="0" aria-valuemax="1000">
+                9000€ / 10.000€</div>
+            </div>
+            <div class="col-md-12 text-center" style="padding: 19px ;">
+              <button type="button" class="btn btn-secondary"><b>Faire un don</b></button>
+              <button type="button" class="btn btn-warning"><a href="https://www.facebook.com"><b>Partager</b></a></button>
+          </div>
+        </div>     
+</div>
+<!--========================================= end div progress bar========================================-->
+
+
+<!--========================================= start pagination div ========================================-->
+<div class="d-flex justify-content-center">
+      <div class=" text-align">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+              Precedent</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Suivant
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+</div>
+<!--========================================= end pagination div ========================================-->
+
+<!--========================================= start footer div ========================================-->
+<div class="footer"> 
+  <div class="container" style="padding: 30px ;">
+    <div class="col-md-12 text-center">
+        <button type="button" class="btn btn-danger"
+        data-bs-toggle="modal" 
+        data-bs-target="#modalSubscriptionForm">Abonner-vous à la newsletter d'Ahua.net</button>
+        <button type="button" class="btn btn-primary"
+                data-bs-toggle="modal" 
+                data-bs-target="#contactModal" >Nous contacter</button>
+        <button type="button" class="btn btn-warning">
+          <a href="https://www.facebook.com/JesuisAHUA/">Suivez-nous</a></button>
+          
+          <div class="row" style="padding: 70px ;">
+            <div class="col">
+              <img src="ressources/moi.jpg" width="120" height="150"
+              class="img-fluid img-thumbnail profil">
+              <p>Dévolopper par:<br>
+                <strong>Anass N'DRI</strong><br>
+                Développeur Angular Full Stack</p>             
+            </div>   
+            
+            
+        </div>
+    </div> 
+  </div>
+  <!--========================================= end footer div ========================================-->
+
+
 
 <!-- Dependances -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
-           integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-             crossorigin="anonymous">
-</script>
-<script type="text/javascript" src="js/bootsnav.js"></script>-->
+<script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
 </body>
+
+
 </html>
